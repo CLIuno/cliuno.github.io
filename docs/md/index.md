@@ -1,12 +1,12 @@
 ---
 layout: home
 
-title: RuM UI
-titleTemplate: RuM UI is a UI library built on top of Tailwind CSS
+title: CLIuno
+titleTemplate: All in one is a CLI to make your journey in web development less painful
 
 hero:
-  name: RuM UI
-  text: UI library built on top of Tailwind CSS
+  name: CLIuno
+  text: All in one is a CLI to make your journey in web development less painful
   tagline: Simple, powerful, and performant, Looks great on any device, from desktop to mobile.
   actions:
     - theme: brand
