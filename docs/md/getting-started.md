@@ -1,16 +1,16 @@
-# What is RuMUI?
+# What is CLIuno?
 
-RuMUI is a UI library built on top of [Tailwind CSS](https://tailwindcss.com/).
+All in one is a CLI to make your journey in web development less painful.
 
 ::: warning
-RuM UI is currently in `testing` status and its not ready to use yet.
+CLIuno is currently in `testing` status and its not ready to use yet.
 :::
 
 ## Motivation
 
-We love Bootstrap, but being for long time and all website looks same, so we decided to create our own UI library.
+CLIuno is a CLI that aims to help developers to create web applications with ease. It is based on the idea that you should be able to create a web application with a single command.
 
-Fundamentally, we believe that UI libraries should be:
+Fundamentally, we believe that CLIuno tool should be:
 
  **Simple** - Easy to use and easy to understand.
 

@@ -1,7 +1,7 @@
 {
-  "name": "rumui-docs",
+  "name": "cliuno-docs",
   "version": "1.0.0",
-  "description": "Docs for RuMUI",
+  "description": "Docs for CLIuno",
   "main": "index.js",
     "scripts": {
       "docs:dev": "vitepress dev md",
@@ -11,10 +11,10 @@
     },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ru44/ru44.github.io.git"
+    "url": "git+https://github.com/CLIuno/cliuno.github.io.git"
   },
   "keywords": [
-    "RuMUI"
+    "CLIuno"
   ],
   "author": "RuM",
   "license": "MIT",
