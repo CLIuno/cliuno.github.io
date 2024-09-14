@@ -1,0 +1,28 @@
+{
+  "name": "cliuno-website",
+  "version": "1.1.1",
+  "description": "CLIuno website",
+  "main": "index.js",
+  "scripts": {
+    "src:dev": "vitepress dev md --port 5000",
+    "src:build": "vitepress build md",
+    "src:serve": "vitepress serve md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CLIuno/cliuno.github.io.git"
+  },
+  "keywords": [
+    "CLIuno"
+  ],
+  "author": "RuM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CLIuno/cliuno.github.io/issues"
+  },
+  "homepage": "https://github.com/CLIuno/cliuno.github.io#readme",
+  "devDependencies": {
+    "vitepress": "^1.3.4",
+    "vue": "^3.5.5"
+  }
+}
