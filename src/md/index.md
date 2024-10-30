@@ -5,8 +5,8 @@ title: CLIuno
 titleTemplate: CLIuno is a tool to make your journey in web development less painful
 
 hero:
-  name: CLIuno
-  text: a tool to make your journey in web development less painful
+  name: Make your journey in web development less painful
+  text:
   tagline: Simple, powerful, and performant, and also easy to use and free.
   actions:
     - theme: brand
