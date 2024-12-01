@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/CLIuno/cliuno.github.io#readme",
   "devDependencies": {
-    "vitepress": "^1.4.2",
-    "vue": "^3.5.12"
+    "@changesets/cli": "^2.27.10",
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
   }
 }
