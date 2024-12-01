@@ -15,31 +15,3 @@ it can generate a full stack web application with a single command. it uses the 
 for example, if you want to create a new project with `React` and `Express`, you can do that with a single command.
 
 here is the list of frameworks and libraries that CLIuno supports:
-
-frontend:
-
-- Vue
-- React
-- Angular
-
-backend:
-
-- Express
-- fastify
-- django
-- nestjs
-- laravel
-- AdonisJs
-- fastapi
-- ASP.NET Core
-
-database:
-
-- SQLite
-- PostgreSQL
-- Supabase
-
-Mobile:
-
-- React Native
-- Flutter
