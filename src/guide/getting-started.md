@@ -4,7 +4,7 @@
 
 I wish if you don't have to install these Requirements, but you should get them.
 
-- Node.js 16x and above
+- Node.js 22x and above
 - Docker 19x and above
 - Git 2x and above
 
@@ -17,34 +17,29 @@ All of these are optional, but you should have them if you want to work with the
 
 ## Installation
 
-```bash
-npm install -g cliuno
-```
+::: code-group
 
-or if you are using yarn
-
-```bash
-
-yarn global add cliuno
-```
-
-or if you are using npx
-
-```bash
-npx cliuno
-```
-
-or if you are using pnpm
-
-```bash
+```bash [pnpm]
 pnpm add -g cliuno
 ```
 
-or if you are using bun
+```bash [npm]
+npm install -g cliuno
+```
 
-```bash
+```bash [yarn]
+yarn global add cliuno
+```
+
+```bash [npx]
+npx cliuno
+```
+
+```bash [bun]
 bun add -g cliuno
 ```
+
+:::
 
 ## Usage
 
