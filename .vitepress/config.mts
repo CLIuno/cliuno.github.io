@@ -30,7 +30,7 @@ export default withMermaid(
         provider: "local",
       },
       footer: {
-        message: "Released under the AGPL 3.0.1 License.",
+        message: "Released under the AGPL-3.0 License.",
         copyright: "Copyright © 2019-present RuM",
       },
       nav: [
@@ -49,15 +49,16 @@ export default withMermaid(
           items: [
             { text: "Auth", link: "/api/#auth" },
             { text: "Users", link: "/api/#users" },
-            { text: "Roles", link: "/api/#roles" },
-            { text: "Posts", link: "/api/#posts" },
+            { text: "Todos", link: "/api/#todos" },
+            { text: "Posts & comments", link: "/api/#posts-comments" },
             { text: "Follows", link: "/api/#follows" },
+            { text: "Roles", link: "/api/#roles" },
           ],
         },
       ],
 
       socialLinks: [
-        { icon: "github", link: "https://github.com/Cliuno" },
+        { icon: "github", link: "https://github.com/CLIuno" },
         { icon: "twitter", link: "https://twitter.com/cliuno" },
         {
           icon: {

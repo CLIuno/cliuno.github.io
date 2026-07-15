@@ -2,20 +2,29 @@
 
 ## Requirements
 
-I wish if you don't have to install these Requirements, but you should get them.
+- **Node.js** 20+ and **Git** 2+ (always needed).
+- The toolchain for whatever stack you pick, only for its dependency-install step:
+  - **Laravel / TALL** → PHP + Composer
+  - **Django / FastAPI** → Python + [uv](https://docs.astral.sh/uv/)
+  - **Rails** → Ruby + Bundler
+  - **Spring Boot** → JDK 17 (the `./mvnw` wrapper is included)
+  - **ASP.NET** → .NET 8 SDK
+  - **Drogon** → Docker (builds in the official Drogon image)
+  - **Flutter** → the Flutter SDK
 
-- Node.js 22x and above
-- Docker 19x and above
-- Git 2x and above
+If a toolchain is missing, the project is still scaffolded — you just run the install
+command yourself afterward.
 
-if you are going to work with Laravel, you should have composer installed.
-if you are going to work with Django, you should have python installed.
-if you are going to work with Spring Boot, you should have java and mvn installed.
-if you are going to work with Dotnet Core, you should have dotnet installed.
-if you are going to work with Flutter, you should have flutter installed.
-All of these are optional, but you should have them if you want to work with the frameworks.
+## Usage
 
-## Installation
+CLIuno is interactive. Run it and answer the prompts (design pattern → framework →
+package manager → database):
+
+```bash
+npx cliuno
+```
+
+Or install it globally:
 
 ::: code-group
 
@@ -31,20 +40,34 @@ npm install -g cliuno
 yarn global add cliuno
 ```
 
-```bash [npx]
-npx cliuno
-```
-
 ```bash [bun]
 bun add -g cliuno
 ```
 
 :::
 
-## Usage
+Then:
 
 ```bash
 cliuno
 ```
 
-Project status on circleci: [![CircleCI](https://circleci.com/gh/CLIuno/core.svg?style=svg)](https://circleci.com/gh/CLIuno/core)
+Prefer to check your machine first? Run the doctor to see which tools each stack needs:
+
+```bash
+npx cliuno --doctor
+```
+
+## In your editor
+
+The **[CLIuno VS Code extension](https://github.com/CLIuno/CLIuno-Vscode-Extension)** does
+the same thing without leaving your editor: open the Command Palette and run
+**CLIuno: Scaffold a new app**, pick a stack, and it clones the template, installs
+dependencies, and opens the project.
+
+## After scaffolding
+
+Each template ships its own `README.md` and `CLAUDE.md` with the exact commands to run it.
+Frontends default to a backend at `http://localhost:3000/api/v1`; point them elsewhere via
+the template's env variable. Pick any frontend with any backend — every pair is
+contract-tested.

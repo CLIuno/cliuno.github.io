@@ -1,31 +1,51 @@
 # What is CLIuno?
 
-it's a javascript tool to make full stack web applications with ease. it has so many features that make it easy to use and flexible to customize.
-
-::: warning
-CLIuno is currently in `testing` status and its not ready to use yet.
-:::
+CLIuno is a CLI that scaffolds a **working full-stack app** in the stack of your choice —
+ready for humans *and* AI agents to build on. Instead of a blank folder, you start from a
+project that already has authentication, CRUD, tests, linting, and CI-grade quality gates.
 
 ## Motivation
 
-when you want to test a new idea or build a new project, you need to set up the environment, install the dependencies, and configure the project. this process is time-consuming and boring. CLIuno is here to help you with that.
+Starting a project means setting up the environment, wiring auth, installing and
+configuring everything — slow and repetitive. CLIuno does that for you: pick a frontend
+and a backend and get two projects that already talk to each other.
 
-it can generate a full stack web application with a single command. it uses the best tools to make your project fast and reliable.
+The trick is that **every template implements the same demo app against one shared REST
+contract** — auth (JWT with refresh, reset, email verification, OTP), users, todos,
+posts + comments, follows and roles. A live compatibility matrix boots each backend and
+drives the full contract with real payloads, so **every frontend works with every
+backend** (currently 9 frontends × 12 backends, all green). See
+[Frameworks](/frameworks/framework) for the full list.
 
-for example, if you want to create a new project with `Vue` and `Express`, you can do that with a single command.
+## What you get
 
-here is the list of frameworks and libraries that CLIuno supports:
+### Web frontends
 
-## Features
+- **shadcn-style UI** on unstyled, accessible primitives (Base UI, reka-ui, bits-ui,
+  Kobalte, spartan) — you own the component code.
+- **Tailwind v4** with CSS-variable theming and light/dark mode.
+- A typed **API layer** already wired to the shared contract, plus auth state management.
+- **Vite** (or the framework's dev server) for a fast dev loop.
 
-### Frontend
-- **Tailwind CSS v4** — utility-first styling with configurable primary colors and fonts
-- **UnoCSS** — atomic CSS engine for fine-grained control
-- **Vite** — lightning-fast dev server and build tool
-- **store management** — state & store management
-- **i18n** — localization with auto-generated locale files
-- **Theme switching** — light, dark, system, and realtime modes
-- **Built-in components & layouts**
-- **ESLint & Prettier** — consistent code style
-- **Husky & Commitlint** — git hook enforcement
-- **Configurable theme** — primary colors and fonts out of the box
+### Backends
+
+- The full contract at **`/api/v1`** on **SQLite** — auth, users, todos, posts,
+  comments, follows and roles — with a matching test suite.
+- **Bearer (JWT) auth** with refresh tokens, password reset, email verification, and
+  RFC 6238 **TOTP** OTP.
+- Fresh-clone rule: the default role is created on first registration, so it runs against
+  an **empty database** with no seeding.
+
+### Mobile
+
+- **Flutter** (Material 3) and **React Native** (Expo) clients that speak the same
+  contract as the web frontends.
+
+### Tooling everywhere
+
+- **oxc** for JS/TS (oxlint + oxfmt); each non-JS stack keeps its native linter
+  (ruff, rubocop, pint, …).
+- **Conventional commits**, editor-ready configs, and a `CLAUDE.md` in every template so
+  AI agents extend it idiomatically.
+
+CLIuno is published on npm and ready to use — `npx cliuno` to get started.

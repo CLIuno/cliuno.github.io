@@ -5,28 +5,31 @@ title: CLIuno
 titleTemplate: Your Ultimate Full Stack Web Development Tool
 
 hero:
-  name: Make your journey in web development less painful
-  text:
-  tagline: Simple, powerful, and performant, and also easy to use and free.
+  name: Scaffold a working full-stack app
+  text: in any stack, ready to build on
+  tagline: Pick a frontend and a backend — CLIuno gives you two projects that already talk to each other. Auth, CRUD, tests, and CI included.
   actions:
     - theme: brand
+      text: Get Started
+      link: /guide/getting-started
+    - theme: alt
       text: What is CLIuno?
       link: /guide/what-is-cliuno
     - theme: alt
       text: View on GitHub
-      link: https://github.com/CLIuno/core
+      link: https://github.com/CLIuno
   image:
     src: /logo.png
     alt: CLIuno Logo
 features:
-  - title: Fast and Reliable
-    details: CLIuno is fast and reliable, it uses the best tools to make full stack app.
-  - title: Designed to be simplicity first
-    details: designed to be simple and easy to use.
-  - title: Lightweight
-    details: small in size and fast to load.
-  - title: support for all platforms
-    details: support for all platforms, Windows, Linux, and MacOS.
+  - title: Any stack, one contract
+    details: 7 web frontends, 2 mobile, and 12 backends — all implementing the same demo app against one shared REST contract.
+  - title: Every pair just works
+    details: A live compatibility matrix proves all 108 frontend×backend combinations against the full contract with real payloads.
+  - title: Start from something that runs
+    details: Every template ships auth (JWT, refresh, reset, verify, OTP), CRUD, tests, linting, and CI — not a blank folder.
+  - title: shadcn-style UI, oxc tooling
+    details: Web frontends use shadcn components on Tailwind v4; JS/TS is linted and formatted with oxc. A CLAUDE.md guides AI agents.
 ---
 
 <style>
