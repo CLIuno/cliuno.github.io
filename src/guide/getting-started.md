@@ -8,8 +8,9 @@
   - **Django / FastAPI** → Python + [uv](https://docs.astral.sh/uv/)
   - **Rails** → Ruby + Bundler
   - **Spring Boot** → JDK 17 (the `./mvnw` wrapper is included)
-  - **ASP.NET** → .NET 8 SDK
+  - **ASP.NET** → .NET 10 SDK
   - **Drogon** → Docker (builds in the official Drogon image)
+  - **Axum** → Rust stable (cargo)
   - **Flutter** → the Flutter SDK
 
 If a toolchain is missing, the project is still scaffolded — you just run the install
@@ -71,3 +72,10 @@ Each template ships its own `README.md` and `CLAUDE.md` with the exact commands 
 Frontends default to a backend at `http://localhost:3000/api/v1`; point them elsewhere via
 the template's env variable. Pick any frontend with any backend — every pair is
 contract-tested.
+
+Add your own resources with one command instead of writing boilerplate —
+see [Generators & AI agents](./generators):
+
+```bash
+cliuno make:resource Product --fields name:string,price:number,inStock:boolean
+```

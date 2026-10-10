@@ -7,7 +7,7 @@ they just work together.
 
 Every frontend × backend pair is proven by a live **compatibility matrix** that boots
 each backend and drives the full contract with real payloads. Today that's **9 frontends
-× 12 backends = 108 passing combinations**.
+× 13 backends = 117 combinations**.
 
 ## Web frontends
 
@@ -43,21 +43,22 @@ with no seeding.
 | --------- | ---------------- |
 | **Express** | Node · TypeScript + TypeORM |
 | **Fastify** | Node · TypeScript + TypeORM |
-| **NestJS** | Node · NestJS 10 + TypeORM |
+| **NestJS** | Node · NestJS 11 + TypeORM |
 | **AdonisJS** | Node · AdonisJS 6 + Lucid |
 | **Django** | Python · Django (uv) |
 | **FastAPI** | Python · FastAPI + SQLAlchemy (uv) |
-| **Laravel** | PHP · Laravel 12 + Sanctum |
+| **Laravel** | PHP · Laravel 13 + Sanctum |
 | **Rails** | Ruby · Rails 8 API |
-| **Spring Boot** | Java 17 · Spring Boot 3.4 |
-| **ASP.NET** | C# · ASP.NET Core 8 + EF Core |
+| **Spring Boot** | Java 17 · Spring Boot 4 |
+| **ASP.NET** | C# · ASP.NET Core 10 + EF Core |
 | **Drogon** | C++17 · Drogon |
+| **Axum** | Rust · Axum 0.8 + sqlx (SQLite) |
 
 ## Full-stack (one repo)
 
 | Framework | Stack |
 | --------- | ----- |
-| **TALL stack** | Laravel 13 + Livewire/Volt UI — also serves the REST API |
+| **TALL stack** | Laravel 13 + Livewire 4 single-file pages — also serves the REST API |
 
 ## Scaffolding
 

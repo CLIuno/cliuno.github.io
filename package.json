@@ -22,14 +22,15 @@
     "url": "https://github.com/CLIuno/cliuno.github.io/issues"
   },
   "homepage": "https://github.com/CLIuno/cliuno.github.io#readme",
-    "devDependencies": {
-    "mermaid": "^11.12.2",
-    "vite": "^7.3.1",
-    "vitepress": "2.0.0-alpha.16",
+  "devDependencies": {
+    "mermaid": "^12.1.0",
+    "vite": "^8.3.4",
+    "vitepress": "2.0.0-alpha.20",
     "vitepress-plugin-mermaid": "^2.0.17"
   },
   "dependencies": {
-    "@changesets/cli": "^2.27.10",
-    "vue": "^3.5.31"
-  }
+    "@changesets/cli": "^3.0.3",
+    "vue": "^3.5.43"
+  },
+  "packageManager": "pnpm@11.8.0"
 }

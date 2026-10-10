@@ -14,7 +14,7 @@ The trick is that **every template implements the same demo app against one shar
 contract** — auth (JWT with refresh, reset, email verification, OTP), users, todos,
 posts + comments, follows and roles. A live compatibility matrix boots each backend and
 drives the full contract with real payloads, so **every frontend works with every
-backend** (currently 9 frontends × 12 backends, all green). See
+backend** (currently 9 frontends × 13 backends). See
 [Frameworks](/frameworks/framework) for the full list.
 
 ## What you get

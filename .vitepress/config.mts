@@ -36,6 +36,7 @@ export default withMermaid(
       nav: [
         { text: "Home", link: "/" },
         { text: "Guide", link: "/guide/getting-started" },
+        { text: "Generators", link: "/guide/generators" },
         { text: "Frameworks", link: "/frameworks/framework" },
         { text: "API", link: "/api/" },
       ],
@@ -43,6 +44,7 @@ export default withMermaid(
       sidebar: [
         { text: "What is CLIuno?", link: "/guide/what-is-cliuno" },
         { text: "Guide", link: "/guide/getting-started" },
+        { text: "Generators & AI agents", link: "/guide/generators" },
         { text: "Frameworks", link: "/frameworks/framework" },
         {
           text: "API Reference",
