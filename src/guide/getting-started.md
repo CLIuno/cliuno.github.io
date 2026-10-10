@@ -10,6 +10,7 @@
   - **Spring Boot** → JDK 17 (the `./mvnw` wrapper is included)
   - **ASP.NET** → .NET 10 SDK
   - **Drogon** → Docker (builds in the official Drogon image)
+  - **Axum** → Rust stable (cargo)
   - **Flutter** → the Flutter SDK
 
 If a toolchain is missing, the project is still scaffolded — you just run the install

@@ -23,7 +23,7 @@ hero:
     alt: CLIuno Logo
 features:
   - title: Any stack, one contract
-    details: 7 web frontends, 2 mobile, and 12 backends — all implementing the same demo app against one shared REST contract.
+    details: 7 web frontends, 2 mobile, and 13 backends — all implementing the same demo app against one shared REST contract.
   - title: Every pair just works
     details: A live compatibility matrix proves all 108 frontend×backend combinations against the full contract with real payloads.
   - title: Start from something that runs
