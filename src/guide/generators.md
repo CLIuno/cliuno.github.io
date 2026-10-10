@@ -56,13 +56,14 @@ the shared contract (`cliuno-matrix`). Install them any of these ways:
 ::: code-group
 
 ```bash [Claude Code plugin]
-/plugin install cliuno --marketplace CLIuno/core
-# or: claude plugin marketplace add CLIuno/core && claude plugin install cliuno@cliuno
+claude plugin marketplace add CLIuno/core
+claude plugin install cliuno@cliuno
+# inside a session: /plugin marketplace add CLIuno/core, then /plugin install cliuno@cliuno
 ```
 
 ```bash [project .claude/skills]
-npx cliuno@latest skills install        # --global → ~/.claude/skills
-npx cliuno@latest skills status         # installed / outdated / modified / missing
+npx cliuno@^2.2 skills install        # --global → ~/.claude/skills
+npx cliuno@^2.2 skills status         # installed / outdated / modified / missing
 ```
 
 ```bash [skills.sh]

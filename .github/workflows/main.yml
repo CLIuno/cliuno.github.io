@@ -19,13 +19,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: pnpm/action-setup@v5
-        with:
-          version: 10
-
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      # reads the exact pnpm version from package.json#packageManager (needs the checkout first)
+      - uses: pnpm/action-setup@v5
 
       - name: Use Node.js 22
         uses: actions/setup-node@v4
